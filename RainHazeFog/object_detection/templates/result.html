@@ -1,0 +1,55 @@
+{% load  static%}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Rain Haze Fog Image Enhancement</title>
+<link rel="stylesheet" type="text/css" href="{% static 'style/style.css'%}" title="style" />
+</head>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="logo">
+				<div id="logo_text">
+					<!-- class="logo_colour", allows you to change the colour of the text -->
+					<div align="center">
+						<h3>
+							<a href="#"><font color="white">ENHANCING ROAD SAFETY:DETECTION AND MITIGATION OF RAIN, HAZE AND FOG USING OPENCV</font></a>
+						</h3>
+					</div>
+					<br/><br/>
+				</div>
+			</div>
+		</div>
+		<div id="content_header"></div>
+		<div id="site_content">
+			<div id="content">
+
+				<font color="red" size="5">
+				
+					Input Image<br/>
+					<img src="{% static 'src.jpg'%}" height="400" width="500"><br/><br/>
+
+					Dark Image<br/>
+					<img src="{% static 'dark.jpg'%}" height="400" width="500"><br/><br/>
+
+					<!-- Light Image<br/>
+					<img src="{% static 'light.jpg'%}" height="400" width="500"><br/><br/> -->
+				
+					Tranmission Image<br/>
+					<img src="{% static 'tran.jpg'%}" height="400" width="500"><br/><br/>
+
+					Guided Filter Transmission Image<br/>
+					<img src="{% static 'gtran.jpg'%}" height="400" width="500"><br/><br/>
+
+					Recovered Image<br/>
+					<img src="{% static 'dst.jpg'%}" height="400" width="500">
+
+				</font>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

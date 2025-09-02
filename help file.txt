@@ -1,0 +1,18 @@
+---------------------- help file...……………………..
+create folder on desktop .
+anaconda prompt:create environment
+conda create -n mojor python==3.6.9
+Proceed ([y]/n)? [y]
+(base) C:\Users\vyshn>activate major
+select the path from the folder.
+(major) C:\Users\vyshn>cd C:\Users\vyshn\OneDrive\Desktop\major\RainHazeFog\object_detection
+pip install -r requirements.txt
+(major) C:\Users\vyshn\OneDrive\Desktop\major\RainHazeFog\object_detection\RainHazeFogDetection>python manage.py runserver
+
+
+ 
+
+
+---------------- existing laptop------------------
+(base) C:\Users\vyshn>activate major
+(major) C:\Users\vyshn\OneDrive\Desktop\major\RainHazeFog\object_detection\RainHazeFogDetection>python manage.py runserver

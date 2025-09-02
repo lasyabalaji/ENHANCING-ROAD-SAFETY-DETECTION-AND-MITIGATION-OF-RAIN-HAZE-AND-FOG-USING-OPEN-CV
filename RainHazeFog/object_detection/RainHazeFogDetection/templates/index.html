@@ -1,0 +1,61 @@
+{% load  static%}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Rain Haze Fog Image Enhancement</title>
+<link rel="stylesheet" type="text/css" href="{% static 'style/style.css'%}" title="style" />
+</head>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="logo">
+				<div id="logo_text">
+					<!-- class="logo_colour", allows you to change the colour of the text -->
+					<div align="center">
+						<h3>
+							<a href="#"><font color="white">ENHANCING ROAD SAFETY: DETECTION AND MITIGATION OF 
+								RAIN, HAZE AND FOG USING OPEN CV</font></a>
+						</h3>
+					</div>
+					<br/><br/>
+				</div>
+			</div>
+		</div>
+		<div id="content_header"></div>
+		<div id="site_content">
+			<div id="content">
+
+				<form name="form" action="/predict/" enctype="multipart/form-data" method="post">
+					{% csrf_token %}
+					<div class="form_settings">
+
+						<p>
+							<span>Photo :</span><input class="contact" type="file" name="photo" value="" />
+						</p>
+
+						<p style="padding-top: 15px">
+							<span>&nbsp;</span><input class="submit" type="submit"
+								name="contact_submitted" value="Predict" />
+						</p>
+
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<div align="center">
+		<p>
+			<a href="#"><font size=16></font><font color="white">Major Project by:</font></a><br>
+			<div align="center">
+				<p>
+					<a href="#"><font size="16"></font><font color="white">Panaganti Koushik - 21311A05E8<br>Karyada Vaeshnavi - 21311A05H3<br>Sree Lasya Balaji - 21311A05J2</font></a>
+				</p>
+			</div>
+		</p>
+	</div>
+</body>
+</html> 
